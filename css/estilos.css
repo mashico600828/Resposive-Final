@@ -1,0 +1,809 @@
+*{
+    margin:0px; 
+	padding:0px; 
+	box-sizing:border-box;
+    margin: 0 auto;		
+}
+
+body {	
+	background-color: #02010a;
+	color: white;
+	width:900px;
+    margin: 0 auto;	
+    font-family: 'Dancing Script', cursive; 
+}
+
+
+#main-header {
+    background:#5b7989;	
+	color: white;
+	height: 80px;
+	width:900px;
+    margin: 0 auto;	
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;	
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+}
+
+#main-header {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein{
+  0% {
+    /* código css 1 */
+    margin-top: 150%;	
+  }
+
+  60% {
+    /* código css 2 */
+	    margin-top: -5%;
+  }
+
+  100% {
+    /* código css 3 */
+    margin-top: 0%;	
+  }
+}
+
+
+#main-header a {
+	color: white;
+}
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+
+#logo-header:hover {
+	color: #0b76a6;
+}
+	
+#logo-header .site-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+	
+#logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #999;
+}
+	
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}
+	
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	/*line-height: 20px;*/
+}
+			
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+nav ul li a:hover {
+	background: #0b76a6;
+}
+
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+	width:900px;
+	margin-top: 0px;	
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   #contenido {
+	  display: flex;
+	  flex-direction: column;
+	  width:400px;
+	  margin-top: 0px;	
+   }
+
+   #logo-header { display:inline-block;
+      text-align:center;
+	  padding: 15px 0 0 20px;
+	  text-decoration: none;
+   }
+
+   #logo-header .site-name {
+      display: block;
+	  font-weight: 700;
+	  font-size: 1.2em;
+	  text-align:center;
+   }
+	
+   #logo-header .site-desc {
+      display: block;
+	  font-weight: 300;
+	  font-size: 0.8em;
+	  color: #999;
+	  text-align:center;
+   }
+
+	.contenedor
+	{
+		width:400px;
+		text-align:center;
+		font-weight:bold
+	}
+	.contenedor>span {
+		display:inline-block;
+		vertical-align:middle;
+	    font-size: 1.2em;
+		font-weight:bold
+		line-height:normal;
+	}
+}
+/*-------------------------------------------*/
+
+#galeria {
+	display: flex;
+	flex-direction: column;
+	width:900px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;	
+}
+
+footer {
+    background:#C6d5c5;
+	color:black;
+	width:100%;
+	height:30%;
+	top: 10px;
+	text-align: center;
+	width:900px;
+    margin: 0 auto;	
+    bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+}
+
+.container-body {
+	width:100%;
+	width:900px;
+	margin:auto;
+	display: flex;   /*-- para que cada uo de sus elementos se pongan uno alado del otro ---*/
+	justify-content:space-between;
+	text-align:left;
+    color:#000;	
+}
+
+.contacto {
+   max-width:400px;
+}
+
+.contacto h3 {
+   font-size:22px;	
+}
+
+.contacto p {
+   font-size:14px;
+   margin-top:15px;	
+}
+
+.terminos {
+   max-width:400px;
+}
+
+.terminos h3 {
+   font-size:22px;	
+}
+
+.terminos p {
+   font-size:14px;
+   margin-top:15px;	
+}
+
+.social {
+   max-width:400px;
+}
+
+.social h3 {
+   font-size:22px;	
+}
+
+.row {
+   margin-top:10px;
+   display:flex;	
+}
+
+.row img{
+   width:36px;
+   height:36px;
+}
+
+.row label {
+	margin-top:10px;
+    margin-left:20px;
+	max-width:140px;
+}
+
+.derechos {
+   max-width:400px;
+}
+
+.derechos h3 {
+   font-size:22px;	
+}
+
+.derechos p {
+   font-size:14px;
+   margin-top:15px;	
+}
+
+.izquierdo a { color:black;
+}
+
+.derecho a { color:black;
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+   footer {
+      background:#C6d5c5;
+	  color:black;
+	  width:100%;
+	  height:85%;
+	  top: 10px;
+	  text-align: left;
+	  width:400px;
+      margin: 0 auto;	
+      bottom: 10px;
+      border-radius: 0px 0px 10px 10px;
+      -moz-border-radius: 0px 0px 10px 10px;
+      -webkit-border-radius: 0px 0px 10px 10px;
+   }
+
+   .terminos, .social, .derechos {
+      margin-top: 20px;
+   }
+   .row img {
+      margin-left:10px;
+   }
+
+   .row label {
+      margin-left:5px; font-weight:bold;       /*  ojo solo aqui */
+	  max-width:140px;
+   }
+
+   .derechos {
+      max-width:400px;
+	  margin-bottom: 10px;
+   }
+
+   .derechos h3 {
+      font-size:22px;	
+   }
+
+   .derechos p {
+      font-size:14px;
+	  font-weight:bold;
+   }
+
+   .container-body {
+       flex-wrap: wrap;
+	   display: block; 	   
+	   text-align:left;
+	   margin-bottom:10px;
+	   padding-top: 10px;	
+   }
+} /* Fin de Smartphones (portrait & landscape) */
+
+
+.centrado {
+	background:#82c3a6;
+	margin-top: 0px;
+}
+
+.imagen1 {
+   background:#82c3a6;
+   margin:10px auto;
+}   
+ 
+.imagen1 img {
+   display:block;
+   margin-left:auto;
+   margin-right:auto;   
+   width: 80%; height: 50%;
+    box-shadow: 6px 6px 6px #02010a;	
+   -webkit-box-shadow: 6px 6px 6px #02010a;
+   -moz-box-shadow: 6px 6px 6px #02010a;	   
+}
+
+.izquierdo-derecho {
+	background:#d5c75f;
+    border:1px;
+    margin: 0 auto;	
+    display: flex;
+	flex-direction: row;
+}
+
+.izquierdo {
+    float:left;
+    color:#000;
+	background:#d5c75f;
+	margin-top: 20px;	
+}
+
+.izquierdo p { 
+	text-align:center;
+}
+
+.imagen2 img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;   
+	width: 80%; height: 30%;
+    box-shadow: 6px 6px 6px #02010a;	
+   -webkit-box-shadow: 6px 6px 6px #02010a;
+   -moz-box-shadow: 6px 6px 6px #02010a;	
+}
+
+.derecho {
+    float:right;
+    color:#000;
+	background:#d5c75f;
+	margin-top: 20px;	
+}
+
+.derecho p { 
+	text-align:center;
+}
+
+.imagen2:hover {
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+.imagen3 img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;   
+	width: 80%; height: 30%;
+    box-shadow: 6px 6px 6px #02010a;	
+   -webkit-box-shadow: 6px 6px 6px #02010a;
+   -moz-box-shadow: 6px 6px 6px #02010a;	
+}
+
+.imagen3:hover {
+    transform:translate(5px, -20px);
+}
+
+/* Para la Galeria de Paisajes */
+#galeria {
+	background:#d5c75f;
+	/*margin-top: 80px;*/
+}
+
+/* Para la Galeria de Fotos */
+#retratos {
+	background:#d5c75f;
+	/*margin-top: 80px;*/
+}
+
+.imgWrapper1, .imgWrapper2 {
+    font-size: 0;
+	text-align: center;	
+	margin-top: 0px;		
+}
+
+.picWrapper1, .picWrapper2 {
+    font-size: 0;
+	text-align: center;	
+	margin-top: 0px;		
+}
+
+/* para la Galeria de Paisajes */
+.imgWrapper1 .imgResponsiva1, .imgWrapper1 .imgResponsiva2, .imgWrapper1 .imgResponsiva3,
+.imgWrapper2 .imgResponsiva4, .imgWrapper2 .imgResponsiva5, .imgWrapper2 .imgResponsiva6 {
+    display: inline-block;
+    font-size: inherit;
+    padding: 5px;                  /* Cambie el valor de espaciado como desee aquí */
+    box-shadow: 6px 6px 6px #02010a;	
+   -webkit-box-shadow: 6px 6px 6px #02010a;
+   -moz-box-shadow: 6px 6px 6px #02010a;	   
+}
+
+/* para la Galeria de Retratos */
+.picWrapper1 .picResponsiva1, .picWrapper1 .picResponsiva2, .picWrapper1 .picResponsiva3,
+.picWrapper2 .picResponsiva4, .picWrapper2 .picResponsiva5, .picWrapper2 .picResponsiva6 {
+    display: inline-block;
+    font-size: inherit;
+    padding: 5px;                  /* Cambie el valor de espaciado como desee aquí */
+    box-shadow: 6px 6px 6px #02010a;	
+   -webkit-box-shadow: 6px 6px 6px #02010a;
+   -moz-box-shadow: 6px 6px 6px #02010a;	   
+}
+
+/* para Galeria de Paisajes */
+.imgWrapper1 .imgResponsiva1, .imgWrapper1 .imgResponsiva2, .imgWrapper1 .imgResponsiva3 {width: 25%;}
+.imgWrapper2 .imgResponsiva4, .imgWrapper2 .imgResponsiva5, .imgWrapper2 .imgResponsiva6 {width: 25%;}
+
+/* para Galeria de Retratos */
+.picWrapper1 .picResponsiva1, .picWrapper1 .picResponsiva2, .picWrapper1 .picResponsiva3 {width: 25%;}
+.picWrapper2 .picResponsiva4, .picWrapper2 .picResponsiva5, .picWrapper2 .picResponsiva6 {width: 25%;}
+
+
+/* para Galeria de Paisajes */
+.imgResponsiva1 img, .imgResponsiva2 img, .imgResponsiva3 img, .imgResponsiva4 img, .imgResponsiva5 img, .imgResponsiva6 img  {
+    height: auto;
+    width: 100%;
+}
+
+/* para Galeria de Retratos */
+.picResponsiva1 img, .picResponsiva2 img, .picResponsiva3 img, .picResponsiva4 img, .picResponsiva5 img, .picResponsiva6 img  {
+    height: auto;
+    width: 100%;
+}
+
+/* para Galeria de Paisajes */
+.imgResponsiva1 img { 
+  filter: blur(10px);
+}
+
+/* para Galeria de Retratos */
+.picResponsiva1 img { 
+  filter: blur(10px);
+}
+
+/* para Galeria de Paisajes */
+.imgResponsiva2 img, .imgResponsiva4 img, .imgResponsiva6 img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);	
+}
+
+/* para Galeria de Retratos */
+.picResponsiva2 img, .picResponsiva4 img, .picResponsiva6 img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);	
+}
+
+/* para Galeria de Paisajes */
+.imgResponsiva3 img {
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+	-ms-filter: sepia(90%);
+	-o-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+/* para Galeria de Retratos */
+.picResponsiva3 img {
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+	-ms-filter: sepia(90%);
+	-o-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   *{
+      margin:0px; 
+	  padding:0px; 
+	  box-sizing:border-box;
+      margin: 0 auto;		
+   }
+
+   body {
+	  width: 400px;
+      margin: 0 auto;	
+      /*padding-top: 40px; */  /* Relleno superior igual a la altura de la cabecera*/	
+      font-family: 'Dancing Script', cursive; 
+   }
+
+   #main-header {
+	  /*height: 110px;*/
+	  height: 80px;
+	  width: 400px;
+      margin: 0 auto;	
+	  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	  top: 0; /* Posicionamos la cabecera pegada arriba */
+   }
+
+   #main-header {
+      animation-duration: 3s;
+      animation-name: slidein;
+   }
+
+   @keyframes slidein{
+      0% {
+        /* código css 1 */
+         margin-top: 150%;	
+      }
+
+      60% {
+        /* código css 2 */
+	     margin-top: -5%;
+      }
+
+      100% {
+         /* código css 3 */
+         margin-top: 0%;	
+      }
+   }
+
+   #logo-header {
+      flex-wrap: wrap;	   
+	  float: none;
+      margin:auto;
+      display: inline-block;	  	    
+	  text-align:center;
+   }
+   
+   #logo-header .site-name {
+      float:none;
+	  margin:auto;
+      text-align:center;
+   }
+
+   #logo-header .site-desc {
+	  float:none;
+      margin:auto;
+      text-align:center;
+	  color: #999 ;	  
+   }
+
+	.contenedor
+	{
+		width:400px;
+   		text-align:center; 
+	}
+	.contenedor>span {
+		display:inline-block;
+		vertical-align:middle;
+	    font-size: 1.2em;
+		font-weight:bold
+		line-height:normal;
+	}
+ 
+   <style>
+      nav{
+         height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+         margin: 0 auto; /* Centro el contenedor */
+         overflow: hidden;
+         text-align: center;
+      }
+      ul{
+         float: left;
+         list-style-type: none; /* Elimino los estilos de lista */
+         padding: 0; 
+      }
+      li{
+         float: left; /* Floto los li para que se dispongan horizontalmente */
+      }
+      li a{
+         padding: 10px; /* El padding añadirá separación entre los elementos */
+      }
+   </style>
+
+   <style>
+      ul{
+         float: left;
+         list-style-type: none;
+         padding: 0; 
+         position: relative; 
+         left: 50%; 
+		 /*padding-bottom:10px;*/
+		 padding-bottom:0px;
+      }
+      li{
+         float: left;
+         position: relative; 
+         right: 50%;
+      }
+
+      nav ul li {
+	     display: inline-block;
+	     line-height: 20px;
+	     /*line-height: 20px;*/
+      }
+
+   </style>
+
+   #contenido {
+      display: flex;
+	  flex-direction: column;
+	  width:400px;
+      margin: 0 auto;	
+   }
+
+   .centrado {
+      background:#82c3a6;
+	  width:400px;
+	  margin-top: 0px;	  
+   }
+
+   .imagen1 {
+      background:#82c3a6;
+      margin:10px auto;
+   }   
+
+   .imagen1 img {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;   
+      width: 60%; height: 30%;
+      box-shadow: 6px 6px 6px #02010a;	
+      -webkit-box-shadow: 6px 6px 6px #02010a;
+      -moz-box-shadow: 6px 6px 6px #02010a;	   
+   }    
+
+   /*-------------------------------*/
+
+   .izquierdo-derecho {
+	  background:#d5c75f;
+      border:1px;
+      margin: 0 auto;	
+      display: flex;
+	  flex-direction: column;
+	  width:400px;	  
+      margin-left:auto;
+      margin-right:auto;   
+   }
+
+   .izquierdo {
+      color:#000;
+	  background:#d5c75f;
+	  margin-top: 20px;	
+   }
+
+   .imagen2 img {
+      display: flex;
+      /*margin: 0 auto;*/	
+      width: 60%; height: 30%;
+      box-shadow: 6px 6px 6px #02010a;	
+      -webkit-box-shadow: 6px 6px 6px #02010a;
+      -moz-box-shadow: 6px 6px 6px #02010a;	
+   }
+
+   .derecho {
+      color:#000;
+   	  background:#d5c75f;
+	  margin-top: 20px;	
+   }
+
+   .imagen3 img {
+      display: flex;
+      width: 60%; height: 30%;
+      box-shadow: 6px 6px 6px #02010a;	
+      -webkit-box-shadow: 6px 6px 6px #02010a;
+      -moz-box-shadow: 6px 6px 6px #02010a;	
+   }
+
+   .imgWrapper1, .imgWrapper2 {
+	  display: flex;
+	  flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .picWrapper1, .picWrapper2 {
+	  display: flex;
+	  flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   #galeria {
+	  display: flex;
+	  flex-direction: column;
+	  margin-top: 0px;		  
+	  width:400px;
+   }
+
+   #retratos {
+	  display: flex;
+	  flex-direction: column;
+	  margin-top: 0px;		  
+ 	  width:400px;
+   }
+
+   /* para Galeria de Paisajes */
+   .imgWrapper1 .imgResponsiva1, .imgWrapper1 .imgResponsiva2, .imgWrapper1 .imgResponsiva3 {width: 65%;}
+   .imgWrapper2 .imgResponsiva4, .imgWrapper2 .imgResponsiva5, .imgWrapper2 .imgResponsiva6 {width: 65%;}
+
+   /* para Galeria de Retratos */
+   .picWrapper1 .picResponsiva1, .picWrapper1 .picResponsiva2, .picWrapper1 .picResponsiva3 {width: 110%;}
+   .picWrapper2 .picResponsiva4, .picWrapper2 .picResponsiva5, .picWrapper2 .picResponsiva6 {width: 110%;}
+    
+   .contacto {
+      max-width:400px; margin-left:10px; text-align:left;
+   }
+
+   .contacto h3 {
+      font-size:22px;	
+   }
+
+   .contacto p {
+      font-size:14px;
+	  font-weight:bold;
+   }
+
+   .terminos {
+      max-width:400px; margin-left:10px; text-align:left;
+   }
+
+   .terminos h3 {
+      font-size:22px;	
+   }
+
+   .terminos p {
+      font-size:14px;
+	  font-weight:bold;
+   }
+
+   .social {
+      max-width:400px; margin-left:10px; text-align:left;
+   }
+
+   .social h3 {
+      font-size:22px;	
+   }
+
+   .row {
+      display:block;	
+   }
+
+   .terminos, .social, .derechos {
+      margin-top: 20px;
+   }
+   .row img {
+      margin-left:10px;
+   }
+
+   .row label {
+      margin-left:5px; font-weight:bold;       /*  ojo solo aqui */
+   }
+
+   .derechos {
+      max-width:400px; margin-left:10px; text-align:left;
+   }
+
+   .derechos h3 {
+      font-size:22px;	
+   }
+
+   .derechos p {
+      font-size:14px;
+	  font-weight:bold;
+   }
+
+   .container-body {
+       flex-wrap: wrap;
+	   display: block; 	   
+	   text-align:left;
+   }
+} /*---fin Smartphones (portrait & landscape) */   
